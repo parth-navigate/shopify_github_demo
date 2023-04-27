@@ -1,7 +1,20 @@
+<p>{{ section.settings.date }}</p>
+<img src="{{ section.settings.ginger-img-2 | img_url }} ">
 {% schema %}
   {
     "name": "Section name",
-    "settings": []
+    "settings": [
+      {
+        "type": "text",
+        "id": "date",
+        "label": "date-text"
+        },
+       {
+        "type": "image_picker",
+        "id": "ginger-img-2",
+        "label": "ginger-img"
+        }
+    ]
   }
 {% endschema %}
 
